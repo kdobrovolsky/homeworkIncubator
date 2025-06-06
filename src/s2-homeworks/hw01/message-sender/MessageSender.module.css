@@ -1,0 +1,36 @@
+.sendForm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textarea {
+    width: 90%;
+    max-height: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    resize: vertical; /* разрешаем изменять размер только по вертикали */
+    transition: border-color 0.3s ease;
+    resize: none;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--yellow);
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    background: #06c;
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+
+.button:hover {}
+
+.button:active {}

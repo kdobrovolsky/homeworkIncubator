@@ -1,0 +1,113 @@
+/* Стили для контейнера сообщений */
+.messageList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Стили для сообщения друга (справа) */
+  .friendMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    max-width: 80%;
+  }
+  
+  .friendImageAndText {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .friendImageAndText img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .friendText {
+    position: relative;
+    background-color: #F5F7FB;
+    padding: 8px 13px;
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 
+                0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .friendText:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent #F5F7FB transparent;
+  }
+  
+  .friendName {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 4px;
+  }
+  
+  .friendMessageText {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    white-space: pre-wrap;
+  }
+  
+  .friendTime {
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    padding-right: 10px;
+  }
+  
+  /* Стили для формы ввода сообщения */
+  .messageForm {
+    display: flex;
+    padding: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 12px;
+  }
+  
+  .messageInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+  }
+  
+  .sendButton {
+    padding: 12px 24px;
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .time {
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    margin-top: 5px;
+    padding-right: 10px;
+    text-align: right;
+  }
