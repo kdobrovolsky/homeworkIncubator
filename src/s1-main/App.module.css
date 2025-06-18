@@ -1,5 +1,5 @@
 .App {
-    --header_height: 60px;
+
 }
 
 .hw {
@@ -7,5 +7,9 @@
 }
 
 .hwTitle {
-
+font-family: var(--second-family);
+font-weight: 600;
+font-size: 22px;
+color: #000;
+margin-left: 70px;
 }
