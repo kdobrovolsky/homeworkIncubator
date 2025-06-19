@@ -44,7 +44,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,addUserC
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
-
         error && setError('')
     }
     const addUser = () => {
@@ -60,7 +59,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,addUserC
     }
 
     const totalUsers = users.length// need to fix
-    const lastUserName = name // need to fix
+    const lastUserName = name.trim() // need to fix
 
     return (
         <Greeting
