@@ -49,7 +49,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,addUserC
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
     }
-console.log('jhgff')
+
     const onBlur = () => {
         pureOnBlur(name, setError)
     }
@@ -58,8 +58,8 @@ console.log('jhgff')
         pureOnEnter(e, addUser)
     }
 
-    const totalUsers = users.length// need to fix
-    const lastUserName = name.trim() // need to fix
+    const totalUsers = users.length
+    const lastUserName = users[users.length -1]?.name
 
     return (
         <Greeting
