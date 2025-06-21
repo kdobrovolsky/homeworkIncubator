@@ -49,7 +49,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users,addUserC
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
     }
-
+console.log('jhgff')
     const onBlur = () => {
         pureOnBlur(name, setError)
     }
