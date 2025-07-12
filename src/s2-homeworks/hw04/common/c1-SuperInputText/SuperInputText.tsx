@@ -8,7 +8,7 @@ import React, {
 import s from './SuperInputText.module.css'
 
 // тип пропсов обычного инпута
-type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
+type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, //DetailedHTMLProps - это тип из React, который включает все стандартные HTML-атрибуты для элемента
     HTMLInputElement>
 
 // здесь мы говорим что у нашего инпута будут такие же пропсы как у обычного инпута, кроме type
