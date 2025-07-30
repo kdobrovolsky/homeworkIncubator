@@ -14,6 +14,7 @@ export const PATH = {
 function Pages() {
     return (
         <div>
+            
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
                 {/*роутинг будут писать студенты*/}
