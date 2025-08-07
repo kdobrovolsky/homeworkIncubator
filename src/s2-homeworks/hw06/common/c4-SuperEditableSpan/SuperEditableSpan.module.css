@@ -1,11 +1,65 @@
 .spanBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 36px;
 }
 
 .span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #0080FF;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-bottom: 1px dashed #0080FF;
+    transition: all 0.2s ease;
+}
+
+.span:hover {
+    color: #0066CC;
+    border-bottom-color: #0066CC;
 }
 
 .input {
+    width: 276px;
+    height: 36px;
+    padding: 8px 12px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input:focus {
+    border-color: #0080FF;
+    box-shadow: 0 0 0 2px rgba(0, 128, 255, 0.2);
 }
 
 .pen {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    color: #0080FF;
+    transition: color 0.2s ease;
+}
+
+.pen:hover {
+    color: #0066CC;
+}
+
+/* Стили для состояния ошибки (если используется) */
+.error .input {
+    border-color: #CC1439;
+}
+
+.errorMessage {
+    color: #CC1439;
+    font-size: 14px;
+    margin-top: 5px;
 }
