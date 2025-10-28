@@ -1,8 +1,36 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    width: 100%;
 }
 
 .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
 }
 
 .number {
+    min-width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Ключевые стили для выравнивания слайдеров */
+.slider {
+    width: 300px !important; /* Фиксированная ширина для обоих слайдеров */
+    margin: 0 10px;
+}
+
+/* Если SuperRange использует MUI Slider, добавьте эти стили */
+.slider :global(.MuiSlider-root) {
+    width: 300px !important;
+}
+
+/* Для кастомных слайдеров */
+.slider :global([class*="slider"]) {
+    width: 300px !important;
 }
