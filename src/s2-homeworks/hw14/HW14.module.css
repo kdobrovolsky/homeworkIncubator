@@ -1,7 +1,22 @@
 .tech {
-
+    /* стили для каждой технологии */
+    padding: 8px 16px;
+    margin: 4px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
 }
 
 .loading {
-
+    /* стили для индикатора загрузки */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+    margin: 16px 0;
+    min-height: 24px; /* чтобы не прыгало при появлении/исчезновении */
 }
